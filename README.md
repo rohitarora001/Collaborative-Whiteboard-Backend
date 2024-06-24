@@ -141,15 +141,18 @@ Make sure you have Node.js installed. Then, install the necessary packages:
 
 npm install socket.io mongoose
 
-### Overview
+Overview
+
 server.js
 This file (server.js) sets up the Socket.io server and handles socket events for user registration, drawing updates, and disconnection.
 
-### Dependencies
+Dependencies
+
 socket.io: Manages real-time bidirectional event-based communication between clients and server.
 mongoose: MongoDB object modeling tool to interact with MongoDB databases.
 
-### Setup
+Setup
+
 Socket.io Server Initialization
 
 const socketIo = require('socket.io');
@@ -172,7 +175,7 @@ const setupSocketIo = (server) => {
 
 module.exports = { setupSocketIo, rooms, getIo: () => io };
 
-### Events
+Events
 
 register: Registers a new user in a specific room and emits an updateAvatar event to update avatars of all users in the room.
 drawing: Broadcasts drawing data to all users in the same room and updates the database with the latest drawing data.
@@ -184,10 +187,10 @@ Uses Mongoose for interacting with a MongoDB database (Room model) to store and 
 
 
 
-###Contributing
+Contributing
 Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
 
-###License
+License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Happy coding! 🎨
