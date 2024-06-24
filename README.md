@@ -119,14 +119,14 @@ Get All Rooms
     URL: /get-all-rooms
     Method: GET
     Success Response:
-    Status: 200 OK
-    Body:
-        [
-            {
-                "_id": "60c72b2f9b1e8a001c8e4c8b",
-                "roomName": "exampleRoomName"
-            }
-        ]
+        Status: 200 OK
+        Body:
+            [
+                {
+                    "_id": "60c72b2f9b1e8a001c8e4c8b",
+                    "roomName": "exampleRoomName"
+                }
+            ]
     Error Response:
         Status: 500 Internal Server Error
         Body: "Can not retrieve rooms, please try again later"
