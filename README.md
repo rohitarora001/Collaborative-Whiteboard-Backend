@@ -180,8 +180,11 @@ Events
 register: Registers a new user in a specific room and emits an updateAvatar event to update avatars of all users in the room.
 drawing: Broadcasts drawing data to all users in the same room and updates the database with the latest drawing data.
 disconnect: Removes the disconnected user from the room and emits an updateAvatar event to notify all remaining users.
+
 Room Management
+
 rooms: Map object storing room IDs mapped to arrays of users (with socketId and personName).
+
 Database Integration
 Uses Mongoose for interacting with a MongoDB database (Room model) to store and retrieve drawing data.
 
